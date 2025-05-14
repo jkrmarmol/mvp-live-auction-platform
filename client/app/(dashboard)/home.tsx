@@ -17,7 +17,7 @@ export default function Home() {
           backgroundColor: "#000",
           padding: 10,
         }}
-        onPress={() => router.navigate("/(dashboard)/start-bidding")}
+        onPress={() => router.navigate("/(dashboard)/live-bidding")}
       >
         <Text
           style={{
@@ -26,9 +26,10 @@ export default function Home() {
             fontWeight: "semibold",
           }}
         >
-          Start Bidding
+          Live Bidding
         </Text>
       </TouchableOpacity>
+
       <TouchableOpacity
         onPress={() => router.navigate("/(dashboard)/view-bidding")}
         style={{
@@ -44,6 +45,42 @@ export default function Home() {
           }}
         >
           View Bidding
+        </Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        onPress={() => router.navigate("/(dashboard)/my-listing")}
+        style={{
+          backgroundColor: "#000",
+          padding: 10,
+        }}
+      >
+        <Text
+          style={{
+            color: "#fff",
+            fontSize: 14,
+            fontWeight: "semibold",
+          }}
+        >
+          My Listing
+        </Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        onPress={() => router.navigate("/(auth)")}
+        style={{
+          backgroundColor: "#ef4444",
+          padding: 10,
+        }}
+      >
+        <Text
+          style={{
+            color: "#fff",
+            fontSize: 14,
+            fontWeight: "semibold",
+          }}
+        >
+          Logout
         </Text>
       </TouchableOpacity>
     </View>

@@ -10,7 +10,7 @@ type ViewBiddingItemProps = {
   updatedAt: Date;
 };
 
-export default function ViewBiddingItem(props: ViewBiddingItemProps) {
+export default function MyBiddingItem(props: ViewBiddingItemProps) {
   return (
     <TouchableOpacity
       style={{

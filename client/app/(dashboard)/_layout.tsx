@@ -5,15 +5,29 @@ export default function DashboardLayout() {
   return (
     <Stack>
       <Stack.Screen
-        name="index"
+        name="home"
         options={{
           headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="live-bidding"
+        options={{
+          title: "Live Bidding",
+          headerTitleAlign: "center",
         }}
       />
       <Stack.Screen
         name="start-bidding"
         options={{
           title: "Start Bidding",
+          headerTitleAlign: "center",
+        }}
+      />
+      <Stack.Screen
+        name="my-listing"
+        options={{
+          title: "My Listing",
           headerTitleAlign: "center",
         }}
       />
